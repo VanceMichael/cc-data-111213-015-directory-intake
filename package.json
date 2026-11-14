@@ -11,8 +11,9 @@
     "start": "node src/cli.js",
     "acceptance": "node src/cli.js demo",
     "demo": "node src/cli.js demo",
+    "demo:collector": "node scripts/demo-collector.js",
     "fixtures": "node scripts/create-fixtures.js",
-    "check": "node --check src/cli.js && node --check src/domain.js"
+    "check": "node --check src/cli.js && node --check src/domain.js && node --check src/archive.js && node --check src/collector.js && node --check scripts/demo-collector.js"
   },
   "dependencies": {}
 }
